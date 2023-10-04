@@ -10,11 +10,10 @@ class Body extends Component{
     render(){
         const increment = () => {
             console.log('made it')
-            let currentCount = this.state.count +1
-            this.setState({count: currentCount})
+            this.setState({count: this.state.count +1})
         }
         return(
-            <button type="button" class="btn btn-dark" onClick={increment}>
+            <button type="button" className="btn btn-dark" onClick={increment}>
                 {this.state.count}
             </button>
         )
