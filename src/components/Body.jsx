@@ -7,6 +7,12 @@ class Body extends Component{
             count: 0
         }
     }
+
+    componentDidUpdate(prevProps, prevState){
+        console.log(prevState)
+        console.log(this.state)
+    }
+
     render(){
         const increment = () => {
             console.log('made it')
