@@ -33,19 +33,18 @@ class Body extends Component {
                 <div class="container">
                 <div class="row">
                     <div class="col">
-                    Column
+                    {photo.title}
                     </div>
                     <div class="col">
-                    Column
+                    {photo.copyright}
                     </div>
                     <div class="col">
-                    Column
+                    {photo.date}
                     </div>
                 </div>
                 </div>
                 <div style={{ marginTop: "20px" }}>
                     <p>
-                        {photo.title}
                         {photo.url}
                     </p>
                 </div>
@@ -57,11 +56,7 @@ class Body extends Component {
                         {photo.explanation}
                     </p>
                 </div>
-                <div style={{ marginTop: "20px" }}>
-                    <p>
-                        {photo.date}
-                    </p>
-                </div>
+
             </>
         )
     }
