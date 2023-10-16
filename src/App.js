@@ -7,6 +7,7 @@ import BodyHooks from './components/BodyHooks';
 function App() {
   return (
     <div className="App">
+      
       <Nav />
       <Body />
       <BodyHooks />
