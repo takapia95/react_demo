@@ -12,7 +12,7 @@ import IndexRouter from './components/IndexRouter';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <App/>,
     errorElement: <ErrorNotFound />,
     children: [
       { 

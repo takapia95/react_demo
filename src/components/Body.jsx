@@ -5,7 +5,7 @@ class Body extends Component {
     constructor(props){
         super(props)
         this.state = {
-            count: 0,
+            //count: 0,
             photo: {}
         }
     }
@@ -22,14 +22,11 @@ class Body extends Component {
 
     render(){
         const {photo} = this.state
-        const increment = () => {
-            this.setState({count: this.state.count +1})
-        }
+        //const increment = () => {
+            //this.setState({count: this.state.count +1})
+ //       }                 <button type="button" class="btn btn-dark" onClick={increment}> {this.state.count} </button>
         return(
             <>
-                <button type="button" class="btn btn-dark" onClick={increment}>
-                    {this.state.count}
-                </button>
                 <div class="container">
                 <div class="row">
                     <div class="col">

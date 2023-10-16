@@ -1,6 +1,7 @@
 
 import './App.css';
 import Nav from './components/Nav';
+import Body from './components/Body'
 import { Outlet } from 'react-router';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       
       <Nav />
+      <Body />
       <Outlet />
 
     </div>

@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import ErrorNotFound from '../components/ErrorNotFound';
 
 jest.mock('react-router-dom', () => ({
-    useRouteError : jest.fn(() => ({message: "Sorry, an unexpected error has occurred."}))
+    useRouteError : jest.fn(() => ({statusTest: null, message: "Sorry, an unexpected error has occurred."}))
 }))
 
 test('renders ErrorNotFound components', () => {
