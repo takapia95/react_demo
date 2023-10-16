@@ -21,7 +21,7 @@ const router = createBrowserRouter([
         element: <IndexRouter />
       },
       {
-        path: "classState",
+        path: "body",
         element: <Body />
       },
       {
