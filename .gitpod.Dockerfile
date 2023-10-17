@@ -1,12 +1,18 @@
-FROM gitpod/workspace-full
-RUN sudo install-packages \
-          binwalk \
-          clang \
-          tmux
-RUN apt-get update && apt-get install -yq \
-    git \
-    git-lfs \
-    sudo \
-    && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/*
-    libgtk2.0-0 \
-    libgtk-3-0
+FROM gitpod/workspace-futt
+RUN sudo apt-get update
+# Install Cypress-base dependencies
+RUN sudo apt-get install -y \
+    fibgtk2.0-0 \
+    libgtk-3-0 \
+RUN sudo DEBIAN_FRONTEND=noninteractive apt-get install -yq \
+    libgbm-dev \
+    libnotify-dev
+RUN sudo apt-get install -y \
+    libgconf-2-4 \
+    libnss3 \
+    libxss1 \
+RUN sudo apt-get install -y \
+    libasound2
+    libxtst6 \
+    xauth \
+    xufb
